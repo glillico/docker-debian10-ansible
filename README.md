@@ -1,10 +1,11 @@
 # Debian 10 Docker Image for Ansible Testing
 
-A docker containter using Debian 10 with Ansible installed for playbook and role testing.
+A docker container using Debian 10 with Ansible installed for playbook and role testing.
 
 ## Tags
 
-  - 'latest' : Python 3.7.x and the latest stable version of Ansible.
+  - 'latest'  : Python 3.7.x and the latest stable version of Ansible.
+  - 'python2' : Python 2.7.x and the latest stable version of Ansible.
 
 ## How To Build
 
@@ -12,11 +13,11 @@ To build this docker container you can do the following.
 
   - Install Docker Engine, see [here](https://docs.docker.com/engine/install/) for details.
   - Clone this repository.
-    - `$ git clone https://github.com/glillico/`docker-debian10-ansible.git
+    - `$ git clone https://github.com/glillico/docker-debian10-ansible.git`
   - Change to the repositories directory.
     - `$ cd docker-debian10-ansible`
   - Run the command
-    - `$ docker built -t debian10-ansible .`
+    - `$ docker build -t debian10-ansible .`
 
 ## How To Use
 
