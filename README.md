@@ -1,6 +1,6 @@
 # Debian 10 Docker Image for Ansible Testing
 
-[![Build Status](https://github.com/glillico/docker-debian10-ansible/workflows/build/badge.svg)](https://github.com/glillico/docker-debian10-ansible/actions?query=workflow%3Abuild)
+[![CI](https://github.com/glillico/docker-debian10-ansible/workflows/CI/badge.svg)](https://github.com/glillico/docker-debian10-ansible/actions?query=workflow%3ACI)
 
 A docker container using Debian 10 with Ansible installed for playbook and role testing.
 
