@@ -10,13 +10,16 @@ RUN apt-get update \
 # Remove packages that are nolonger requried.
 # Clean the apt cache.
 # Remove documents, man pages & apt files.
-RUN apt-get update \
-&& apt-get install -y --no-install-recommends \
-sudo \
+RUN apt-get install -y --no-install-recommends \
+build-essential \
+libffi-dev \
+libssl-dev \
 python \
+python-dev \
 python-pip \
 python-setuptools \
 python-wheel \
+sudo \
 systemd \
 systemd-sysv \
 && apt-get -y autoremove \
