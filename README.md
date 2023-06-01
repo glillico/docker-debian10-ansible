@@ -25,7 +25,7 @@ To build this docker container you can do the following.
 
   - Install Docker Engine, see [here](https://docs.docker.com/engine/install/) for details.
   - To create a containter from the image you created in the `How To Build` section run the command.
-    - `$ docker run --detach --privileged --volume=/sys/fs/cgroup:/sys/fs/cgroup:ro debian10-ansible:latest`
+    - `$ docker run --detach --privileged --volume=/sys/fs/cgroup:/sys/fs/cgroup:rw --cgroupns=host debian10-ansible:latest`
   - To confirm Ansible is working within the container run the command.
     - `$ docker exec --tty <CONTAINER ID> env TERM=xterm ansible --version`
 
